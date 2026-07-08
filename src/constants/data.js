@@ -258,11 +258,11 @@ export const EDUCATION = [
     duration: "Continuous Learning",
     description: "Completed comprehensive certifications in Advanced React, Next.js Framework, Responsive Web Design, and Tailwind CSS Layouts."
   }
-  
+
 ];
 
 export const CONTACT_INFO = {
-  phone: "+91 XXXXXXXXXX", 
+  phone: "+91 7991574306", 
   email: "arunmojampur@gmail.com",
   location: "India",
   github: "https://github.com",
