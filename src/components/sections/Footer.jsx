@@ -41,7 +41,13 @@ export default function Footer() {
       {/* Glow highlight */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center justify-between gap-8 z-10 relative">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center justify-between gap-8 z-10 relative"
+      >
         
         {/* Top Branding Panel */}
         <div className="flex flex-col items-center text-center gap-3">
@@ -119,7 +125,7 @@ export default function Footer() {
 
         </div>
 
-      </div>
+      </motion.div>
     </footer>
   );
 }
