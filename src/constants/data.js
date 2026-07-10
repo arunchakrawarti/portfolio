@@ -253,22 +253,16 @@ export const SERVICES = [
 
 export const EDUCATION = [
   {
-    degree: "Bachelor of Technology (B.Tech)",
-    institution: "Dr. A.P.J. Abdul Kalam Technical University (AKTU)",
-    duration: "Graduated",
-    description: "Focused on programming fundamentals, computer science principles, database systems, and software engineering. Built a solid software development foundation."
-  },
-  {
     degree: "Diploma",
     institution: "Board of Technical Education Uttar Pradesh (BTEUP)",
     duration: "Completed",
     description: "Gained core training in technical principles, engineering concepts, and practical laboratory practices, enhancing problem-solving and technical execution skills."
   },
   {
-    degree: "10+2 (Intermediate)",
-    institution: "UP Board (Uttar Pradesh Board)",
-    duration: "Completed",
-    description: "Completed secondary education with a focus on science and mathematics, building strong analytical and problem-solving skills."
+    degree: "Bachelor of Technology (B.Tech)",
+    institution: "Dr. A.P.J. Abdul Kalam Technical University (AKTU)",
+    duration: "Graduated",
+    description: "Focused on programming fundamentals, computer science principles, database systems, and software engineering. Built a solid software development foundation."
   },
   {
     degree: "Relevant Frontend Certifications",
