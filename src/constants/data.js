@@ -46,7 +46,7 @@ export const PERSONAL_INFO = {
   stats: [
     { label: "Experience", value: 1, suffix: " Year" },
     { label: "Projects Completed", value: 10, suffix: "+" },
-    { label: "UI Screens Designed", value: 20, suffix: "+" },
+    { label: "UI Screens Designed", value: 500, suffix: "+" },
     { label: "Responsive Designs", value: 100, suffix: "%" }
   ]
 };
