@@ -83,8 +83,6 @@ export default function Contact() {
   return (
     <section id="contact" className="relative py-24 bg-bg-dark">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        
-        {/* Section Heading */}
         <SectionHeading
           title="Contact Me"
           subtitle="Get In Touch"
@@ -92,10 +90,7 @@ export default function Contact() {
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          
-          {/* Left Cards and Map */}
           <div className="lg:col-span-5 space-y-6 flex flex-col justify-between">
-            {/* Contact cards */}
             <div className="space-y-4">
               {contactCards.map((card, idx) => {
                 const Icon = card.icon;
@@ -126,7 +121,6 @@ export default function Contact() {
               })}
             </div>
 
-            {/* Google Map Placeholder */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -134,7 +128,6 @@ export default function Contact() {
               transition={{ duration: 0.6 }}
               className="relative h-64 rounded-3xl overflow-hidden border border-card-border shadow-xl bg-card-dark"
             >
-              {/* Beautiful Dark-themed Styled Map Mock */}
               <iframe
                 title="Location Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.27263595561!2d77.206584!3d28.628454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5d34555555%3A0x18f1e390c8855555!2sNew%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
@@ -146,8 +139,6 @@ export default function Contact() {
               />
             </motion.div>
           </div>
-
-          {/* Right Interactive Form */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -160,7 +151,6 @@ export default function Contact() {
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Name input */}
               <div className="relative group">
                 <input
                   type="text"
@@ -182,8 +172,6 @@ export default function Contact() {
                   Your Name
                 </label>
               </div>
-
-              {/* Email input */}
               <div className="relative group">
                 <input
                   type="email"
@@ -205,8 +193,6 @@ export default function Contact() {
                   Your Email
                 </label>
               </div>
-
-              {/* Subject input */}
               <div className="relative group">
                 <input
                   type="text"
@@ -228,8 +214,6 @@ export default function Contact() {
                   Subject
                 </label>
               </div>
-
-              {/* Message input */}
               <div className="relative group">
                 <textarea
                   name="message"
@@ -251,8 +235,6 @@ export default function Contact() {
                   Your Message
                 </label>
               </div>
-
-              {/* Success Notification */}
               {submitSuccess && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -263,8 +245,6 @@ export default function Contact() {
                   <span>Your message has been successfully received. I will write back soon!</span>
                 </motion.div>
               )}
-
-              {/* Error Notification */}
               {submitError && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -275,8 +255,6 @@ export default function Contact() {
                   <span>Failed to send message. Please try again later or contact me directly.</span>
                 </motion.div>
               )}
-
-              {/* Submit Button */}
               <MagneticButton
                 type="submit"
                 disabled={isSubmitting}

@@ -25,21 +25,21 @@ export const PERSONAL_INFO = {
   title: "Frontend Developer",
   tagline: "React.js | Next.js | Tailwind CSS | Redux Toolkit | REST APIs",
   bio: "A passionate Frontend Developer specializing in building premium, modern, and highly interactive user interfaces. I love turning complex designs into clean, responsive, and performance-optimized code with a focus on details and user experience.",
-  resumeUrl: "/Arun_Chakrawarti_Resume.pdf", // Add resume link here
+  resumeUrl: "/Arun_Chakrawarti_Resume.pdf", 
   socials: [
     {
       name: "GitHub",
-      url: "https://github.com", // Replace with real links if available
+      url: "https://github.com/arunchakrawarti", 
       icon: "github"
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/arun-chakrawarti-b89b3531a",
       icon: "linkedin"
     },
     {
       name: "Email",
-      url: "mailto:arun.chakrawarti.dev@gmail.com",
+      url: "mailto:arunmojampur@gmail.com",
       icon: "mail"
     }
   ],
@@ -283,6 +283,6 @@ export const CONTACT_INFO = {
   phone: "+91 7991574306", 
   email: "arunmojampur@gmail.com",
   location: "India",
-  github: "https://github.com",
-  linkedin: "https://linkedin.com"
+  github: "https://github.com/arunchakrawarti",
+  linkedin: "https://www.linkedin.com/in/arun-chakrawarti-b89b3531a"
 };
