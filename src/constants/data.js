@@ -253,16 +253,16 @@ export const SERVICES = [
 
 export const EDUCATION = [
   {
-    degree: "Diploma",
-    institution: "Board of Technical Education Uttar Pradesh (BTEUP)",
-    duration: "Completed",
-    description: "Gained core training in technical principles, engineering concepts, and practical laboratory practices, enhancing problem-solving and technical execution skills."
-  },
-  {
     degree: "Bachelor of Technology (B.Tech)",
     institution: "Dr. A.P.J. Abdul Kalam Technical University (AKTU)",
     duration: "Graduated",
     description: "Focused on programming fundamentals, computer science principles, database systems, and software engineering. Built a solid software development foundation."
+  },
+  {
+    degree: "Diploma",
+    institution: "Board of Technical Education Uttar Pradesh (BTEUP)",
+    duration: "Completed",
+    description: "Gained core training in technical principles, engineering concepts, and practical laboratory practices, enhancing problem-solving and technical execution skills."
   },
   {
     degree: "Relevant Frontend Certifications",
