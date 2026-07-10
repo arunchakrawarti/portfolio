@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle2 } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { CONTACT_INFO } from "@/constants/data";
 import SectionHeading from "../atoms/SectionHeading";
 import MagneticButton from "../atoms/MagneticButton";
@@ -16,6 +16,7 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -25,16 +26,34 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitSuccess(false);
+    setSubmitError(false);
 
-    // Simulate network submission delay
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setSubmitSuccess(true);
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    
-    // Clear success message after 5 seconds
-    setTimeout(() => setSubmitSuccess(false), 5000);
+    try {
+      const response = await fetch("https://formspree.io/f/mykqredn", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setSubmitSuccess(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      } else {
+        setSubmitError(true);
+        setTimeout(() => setSubmitError(false), 5000);
+      }
+    } catch (error) {
+      console.error("Error submitting contact form:", error);
+      setSubmitError(true);
+      setTimeout(() => setSubmitError(false), 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactCards = [
@@ -242,6 +261,18 @@ export default function Contact() {
                 >
                   <CheckCircle2 className="w-5 h-5 shrink-0" />
                   <span>Your message has been successfully received. I will write back soon!</span>
+                </motion.div>
+              )}
+
+              {/* Error Notification */}
+              {submitError && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center gap-3 text-red-500 text-sm"
+                >
+                  <AlertCircle className="w-5 h-5 shrink-0" />
+                  <span>Failed to send message. Please try again later or contact me directly.</span>
                 </motion.div>
               )}
 

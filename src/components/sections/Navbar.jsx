@@ -61,6 +61,15 @@ export default function Navbar() {
     }
   };
 
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = PERSONAL_INFO.resumeUrl;
+    link.download = "Arun_Chakrawarti_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
@@ -165,7 +174,7 @@ export default function Navbar() {
                 className="w-full mt-2 py-3 rounded-xl bg-gradient-to-tr from-primary to-secondary text-white font-bold text-sm text-center flex items-center justify-center gap-2 cursor-pointer"
                 onClick={() => {
                   setIsOpen(false);
-                  window.open(PERSONAL_INFO.resumeUrl, "_blank");
+                  handleDownloadResume();
                 }}
               >
                 <FileText className="w-5 h-5" /> Download Resume

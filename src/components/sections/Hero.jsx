@@ -44,6 +44,15 @@ export default function Hero() {
     }
   };
 
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = PERSONAL_INFO.resumeUrl;
+    link.download = "Arun_Chakrawarti_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
@@ -108,7 +117,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-4"
           >
             <MagneticButton
-              onClick={() => window.open(PERSONAL_INFO.resumeUrl, "_blank")}
+              onClick={handleDownloadResume}
               className="px-8 py-4 rounded-xl bg-gradient-to-tr from-primary to-secondary text-white font-semibold text-sm shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer"
             >
               <FileText className="w-4 h-4" /> Download Resume

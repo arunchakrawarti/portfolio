@@ -25,7 +25,7 @@ export const PERSONAL_INFO = {
   title: "Frontend Developer",
   tagline: "React.js | Next.js | Tailwind CSS | Redux Toolkit | REST APIs",
   bio: "A passionate Frontend Developer specializing in building premium, modern, and highly interactive user interfaces. I love turning complex designs into clean, responsive, and performance-optimized code with a focus on details and user experience.",
-  resumeUrl: "#", // Add resume link here
+  resumeUrl: "/Arun_Chakrawarti_Resume.pdf", // Add resume link here
   socials: [
     {
       name: "GitHub",
@@ -69,7 +69,7 @@ export const SKILL_CATEGORIES = [
       { name: "HTML", level: 95 },
       { name: "CSS", level: 90 },
       { name: "JavaScript", level: 88 },
-      { name: "TypeScript", level: 80 },
+      // { name: "TypeScript", level: 80 },
       { name: "React", level: 90 },
       { name: "Next.js", level: 85 }
     ]
