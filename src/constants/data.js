@@ -141,8 +141,8 @@ export const PROJECTS = [
       "Responsive design with smooth Awwwards-style page transitions",
       "Secure authentication and persistent state management via Redux Toolkit"
     ],
-    liveUrl: "https://notebook-ias.example.com",
-    githubUrl: "https://github.com/arunchakrawarti/notebook-ias-portal"
+    liveUrl: "https://notebook-ias-web.vercel.app/",
+    githubUrl: "https://github.com/SgCode301/notebook-ias-student"
   },
   {
     id: "home-tuition",
@@ -159,44 +159,62 @@ export const PROJECTS = [
       "User review & rating submission portal",
       "Clean, modern UI designed with glassmorphic cards and hover micro-animations"
     ],
-    liveUrl: "https://home-tuition.example.com",
-    githubUrl: "https://github.com/arunchakrawarti/home-tuition-finder"
+    liveUrl: "https://www.hometuitionacademy.com",
+    githubUrl: "https://github.com/arunchakrawarti/home-tuition"
   },
   {
     id: "astrology-website",
-    title: "Astrology Website",
-    subtitle: "Personal Horoscope & Consultation",
-    description: "A highly immersive and aesthetically pleasing astrology consultation platform. Features live horoscopes, birth chart generation (Kundali), astrological matchmaking, and an interactive consulting interface to book calls with verified astrologers.",
-    shortDescription: "A premium astrology website with horoscope matching, daily predictions, and direct chat consultations.",
+    title: "Celestial Astrology Landing Page",
+    subtitle: "Astrology Landing Page",
+    description: "A highly immersive and visually stunning landing page for celestial astrology consultations. It features interactive zodiac sign explorer sections, detailed horoscope insights, consultant profiles, pricing plans, and beautiful glassmorphic UI elements designed for a premium user experience.",
+    shortDescription: "A beautiful, highly interactive astrology consultation landing page with cosmic visuals, zodiac sign selectors, and consulting details.",
     image: "/images/project-astrology.jpg",
-    technologies: ["React.js", "Tailwind CSS", "Axios", "REST APIs", "Framer Motion", "CSS Gradients"],
+    technologies: ["React.js", "Tailwind CSS", "Framer Motion", "CSS Gradients", "Responsive Design"],
     features: [
-      "Daily, weekly, and monthly horoscope generator using public APIs",
-      "Astrological chart mapping calculator (Kundali and Matchmaking API)",
-      "Astrologer listing with availability scheduler",
-      "Real-time contact details page and reviews",
-      "Cosmic neon background effects and high-fidelity typography"
+      "Stunning cosmic-themed dark design with glowing neon borders and celestial aesthetics",
+      "Interactive Zodiac sign selector displaying character traits and compatibility insights",
+      "Consultation services breakdown with integrated calendar booking call-to-actions",
+      "Testimonials, FAQs, and pricing plans optimized for high conversion rates",
+      "Smooth scroll animations and fluid responsive layout for both mobile and desktop screens"
     ],
-    liveUrl: "https://astrology.example.com",
-    githubUrl: "https://github.com/arunchakrawarti/cosmic-astrology"
+    liveUrl: "https://celestrial-astrology-web.vercel.app/",
+    githubUrl: "https://github.com/arunchakrawarti/celestrial-astrology-web"
   },
   {
-    id: "admin-dashboard",
-    title: "Premium Admin Dashboard",
-    subtitle: "Analytics & Management Hub",
-    description: "A comprehensive SaaS-style admin dashboard featuring dark mode analytics, user management tables, revenue monitoring charts, dynamic calendars, and task checkers. Fully customizable and built for high-performance data processing.",
-    shortDescription: "An analytical operations control panel with data grids, charts, and clean system state controls.",
+    id: "Bill Banao",
+    title: "Bill Banao - GST Invoicing & Billing Portal",
+    subtitle: "GST Invoicing & Billing Platform",
+    description: "A comprehensive SaaS-style GST billing and invoicing application designed to simplify financial transactions for businesses. It allows users to generate compliant GST invoices with automated tax calculations, manage customer ledgers, track dynamic sales graphs, and view outstanding payments in real time.",
+    shortDescription: "A premium GST billing and invoicing software for businesses to manage billing, tax calculations, and revenue analytics.",
+    image: "/images/project-dashboard.jpg",
+    technologies: ["React.js", "Tailwind CSS", "Recharts", "Framer Motion"],
+    features: [
+      "Automated GST tax calculation (CGST, SGST, IGST) with customizable rates",
+      "Interactive sales and revenue analysis graphs built with Recharts",
+      "Customer ledger management with detailed transaction logs and search",
+      "Print-ready and exportable invoice templates with instant PDF generation",
+      "Fully responsive dashboard layout with customizable theme views"
+    ],
+    liveUrl: "https://billbanao.com/",
+    githubUrl: "https://github.com/arunchakrawarti/GST-Program-UI"
+  },
+  {
+    id: "ulive-admin-dashboard",
+    title: "ULive - Admin Dashboard",
+    subtitle: "Streamer Management Hub",
+    description: "A premium, feature-rich admin dashboard designed for the ULive live streaming and order management platform. It enables administrators to manage user streams, track live sales analytics, monitor system health, check user registration logs, and oversee live chat configurations with high efficiency and real-time synchronization.",
+    shortDescription: "A professional dashboard to manage live stream users, monitor transactions, and track operational analytics in real-time.",
     image: "/images/project-dashboard.jpg",
     technologies: ["Next.js", "React.js", "Tailwind CSS", "Redux Toolkit", "REST APIs", "Recharts", "Framer Motion"],
     features: [
-      "Multi-axis line charts and bar charts for live sales and traffic reports",
-      "Interactive user management table with search, pagination, and sorting",
-      "Dynamic activity feeds and tasks status tracker",
-      "Fully responsive sidebar layout and sticky navbar",
-      "Quick theme toggles and custom glassmorphism panels"
+      "Secure administrator authentication page with token verification",
+      "Dynamic live stream and sales monitoring panels using Recharts charts",
+      "Comprehensive user and content management database grids with advanced sorting",
+      "Real-time notifications and system status checks for seamless operations",
+      "Beautiful glassmorphic design with a responsive layout built using Tailwind CSS"
     ],
-    liveUrl: "https://dashboard.example.com",
-    githubUrl: "https://github.com/arunchakrawarti/premium-admin-dashboard"
+    liveUrl: "https://ulive-admin-dashboard.vercel.app/",
+    githubUrl: "https://github.com/SgCode301/ulive-admin-dashboard"
   }
 ];
 

@@ -16,10 +16,8 @@ export default function ProjectCard({ project, index, onOpenModal }) {
       className="group relative rounded-2xl bg-card-dark border border-card-border overflow-hidden shadow-2xl flex flex-col justify-between"
     >
       <div>
-        {/* Project Image Container */}
         <div className="relative h-56 md:h-64 w-full overflow-hidden bg-white/5">
-          {/* We'll use a neat gradient backdrop since there are no images yet, and let Next.js Image render. 
-              Wait, since we don't have actual images in /public/images yet, we can use a gorgeous abstract color gradient. */}
+          
           <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 flex items-center justify-center select-none">
             <span className="text-white/60 font-mono text-xs uppercase tracking-widest">{project.subtitle}</span>
           </div>
@@ -60,6 +58,18 @@ export default function ProjectCard({ project, index, onOpenModal }) {
           <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors duration-300 font-sans">
             {project.title}
           </h3>
+          {project.liveUrl && (
+            <div className="mt-2.5">
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-mono text-accent hover:text-white transition-colors duration-300 font-semibold cursor-pointer"
+              >
+                <ExternalLink className="w-3.5 h-3.5" /> Live Demo / Visit Site
+              </a>
+            </div>
+          )}
           <p className="text-gray-400 text-sm mt-3 line-clamp-3 leading-relaxed font-sans">
             {project.shortDescription}
           </p>
